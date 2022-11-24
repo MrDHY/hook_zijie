@@ -1,18 +1,3 @@
-// function hook_native() {
-//     var addr = Module.getExportByName("libsscronet.so", "SSL_CTX_set_custom_verify")
-//     Interceptor.attach(addr, {
-//         onEnter: function (args) {
-//             console.log("args 1 ", args[0])
-//             console.log("args 2 ", args[1].readCString())
-//             console.log("args 3 ", args[2].readCString())
-//         }, onLeave: function (retval) {
-//             console.log("retval is ", retval)
-//         }
-//     })
-// }
-
-
-
 function hook_ssl(){
 	var cronet = Module.findBaseAddress("libsscronet.so");
 	var ver = Module.findExportByName("libttboringssl.so", "SSL_CTX_set_custom_verify");
