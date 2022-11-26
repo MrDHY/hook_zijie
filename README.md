@@ -1,9 +1,13 @@
 # hook_zijie
 
 > hook_ssl: skip ssl pinning
+
 > hook_java: hook ms.bd.c.k.a, ms.bd.c.k.b, com.ss.android.common.applog.AppLog.getLogEncryptSwitch
+
 > hook_sign: hook X-Helios, X-Medusa
+
 > hook ms.bd.c.k.a: ws_callback, http_callback
+
 > hook ms.bd.c.k.b: try mssdk
 
 
